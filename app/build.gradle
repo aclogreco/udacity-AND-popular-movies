@@ -11,9 +11,15 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            buildConfigField("String", "MDB_API_KEY", PopularMovies_MDB_API_KEY)
+            resValue("string", "mdb_api_key", PopularMovies_MDB_API_KEY)
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "MDB_API_KEY", PopularMovies_MDB_API_KEY)
+            resValue("string", "mdb_api_key", PopularMovies_MDB_API_KEY)
         }
     }
 }
