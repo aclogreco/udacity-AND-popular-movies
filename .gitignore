@@ -118,4 +118,4 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # Project wide settings file
-/gradle.properties
+#/gradle.properties
